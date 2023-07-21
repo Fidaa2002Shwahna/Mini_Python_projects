@@ -1,0 +1,11 @@
+#Convert Fahrenheit to Celsius
+
+def convert(num):
+    res=float((num-32)*5/9)
+
+
+    return res
+
+
+
+print(convert(78))
