@@ -1,0 +1,134 @@
+# Quiz about python
+import random
+
+Q1 = "Which type of Programming does Python support? \n a) object-oriented programming \n b) structured programming \n c) functional programming \n d) all of the mentioned \n"
+# Answer: d
+
+Q2 = "Is Python case sensitive when dealing with identifiers? \n a) no \n b) yes \n c) machine dependent \n d) none of the mentioned \n"
+# Answer: b
+
+Q3 = "Which of the following is the correct extension of the Python file? \n a) .python \n b) .pl \n c) .py \n d) .p \n"
+# Answer: c
+
+Q4 = "Is Python code compiled or interpreted? \n a) Python code is both compiled and interpreted \n b) Python code is neither compiled nor interpreted \n c) Python code is only compiled \n d) Python code is only interpreted \n"
+# Answer: a
+
+Q5 = "All keywords in Python are in _________ \n a) Capitalized \n b) lower case \n c) UPPER CASE \n d) None of the mentioned \n"
+# Answer: d
+
+Q6 = "Which of the following is used to define a block of code in Python language? \n a) Indentation \n b) Key \n c) Brackets \n d) All of the mentioned \n"
+# Answer: a
+
+Q7 = "Which of the following character is used to give single-line comments in Python? \n a) // \n b) # \n c) ! \n d) /* \n"
+# Answer: b
+
+Q8 = "What will be the output of the following Python code? \n i = 1\n while True: \n if i%3 == 0: \n break \n print(i) \n \n i += 1 \n\n\n a) 1 2 3 \n b) error \n c) 1 2 \n d) none of the mentioned \n"
+# Answer: b
+
+Q9 = "Which of the following functions can help us to find the version of python that we are currently working on? \n a) sys.version(1) \n b) sys.version(0) \n c) sys.version() \n d) sys.version \n"
+# Answer: d
+
+Q10 = "What is the order of precedence in python? \n a) Exponential, Parentheses, Multiplication, Division, Addition, Subtraction \n b) Exponential, Parentheses, Division, Multiplication, Addition, Subtraction \n c) Parentheses, Exponential, Multiplication, Division, Subtraction, Addition \n d) Parentheses, Exponential, Multiplication, Division, Addition, Subtraction \n"
+# Answer: d
+
+# ===================================================================
+
+count = 0
+score = 0
+
+while count < 5:
+    rand = random.randint(1, 11)
+    if rand == 1:
+        print(Q1)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'd':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 2:
+        print(Q2)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'b':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 3:
+        print(Q3)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'c':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 4:
+        print(Q4)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'a':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 5:
+        print(Q5)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'd':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 6:
+        print(Q6)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'a':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 7:
+        print(Q7)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'b':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+    if rand == 8:
+        print(Q9)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'b':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+            
+    if rand == 9:
+        print(Q9)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'd':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+            
+    if rand == 10:
+        print(Q10)
+        count += 1
+        answer = input("Answer is: ")
+        if answer.lower() == 'd':
+            score += 1
+            print("Correct")
+        else:
+            print("Wrong")
+
+print("\n \nYour Score is:", score)
